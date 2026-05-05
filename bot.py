@@ -130,22 +130,24 @@ def bonus(msg):
 @bot.message_handler(func=lambda m: m.text == "🏆 Top Users")
 def leaderboard(msg):
 
-    if not referrals:
-        bot.send_message(msg.chat.id, "⚠️ No data available yet")
-        return
+    text = """🏆 TOP USERS
+━━━━━━━━━━━━━━━
 
-    sorted_users = sorted(referrals.items(), key=lambda x: x[1], reverse=True)
+👥 Total Users : 2000
+💸 Total Money Spent : ₹52350
 
-    text = "🏆 TOP EARNERS\n━━━━━━━━━━━━━━━\n\n"
+━━━━━━━━━━━━━━━
+📊 Leaderboard
+━━━━━━━━━━━━━━━
 
-    i = 1
-    for uid, ref in sorted_users[:5]:
-        name = users.get(uid, "User")
-        text += f"{i}. {name} — {ref} invites\n"
-        i += 1
+1. Shreeram : 56 invite
+2. Yashvant : 50 invite
+3. Suyog : 45 invite
+4. Pranav : 30 invite
+5. Siddharth : 20 invite
+"""
 
     bot.send_message(msg.chat.id, text)
-
 
 # ---------------- WITHDRAW ----------------
 @bot.message_handler(func=lambda m: m.text == "💸 Withdraw")
