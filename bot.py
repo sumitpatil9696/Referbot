@@ -8,7 +8,7 @@ TOKEN = "8965263511:AAFgghkFjSUkvV9h8krmeHS9ImnxYJap8bE"
 # ---------- ADMINS ----------
 ADMIN_IDS = [7156406347, 8030618244]  # Dusrya admin chi ID ithe taka
 
-ADMIN_USERNAME = "@dkman77886"
+ADMIN_USERNAME = "dkman77886"
 
 FREE_CHANNEL_LINK = "https://t.me/+T36niNI2r5xhNmM9"
 PREMIUM_CHANNEL_LINK = "https://t.me/+gu10m2ki2zplZTNl"
